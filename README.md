@@ -67,8 +67,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>Listagem de Links</b>:
 
-  - Relatório: `A preencher após publicação do repositório`
-  - Vídeo de apresentação no YouTube: `A preencher após gravação e publicação como não listado`
+  - Vídeo de apresentação no YouTube: [`Global Solution 2° Semestre - OrbitaGuard_AI`](https://youtu.be/PZnHcPU1VCw)
 
 - <b>Explicação de decisões técnicas</b>:
 
