@@ -1,0 +1,77 @@
+[CONCEITO: ORBITAGUARD AI]
+O OrbitaGuard AI é uma plataforma de monitoramento ambiental baseada em dados espaciais, sensores de campo, Machine Learning, detecção de anomalias, regras críticas e dashboard inteligente. O objetivo é apoiar decisões preventivas relacionadas a eventos ambientais extremos, como seca, queimadas, tempestades severas e anomalias climáticas.
+
+[CONCEITO: ECONOMIA ESPACIAL]
+A economia espacial utiliza satélites, sensores orbitais, telecomunicações, processamento de imagens, geolocalização e análise de dados para gerar valor econômico, tecnológico e social. No contexto do OrbitaGuard AI, os dados ambientais simulam informações que poderiam ser derivadas de satélites, estações terrestres e sensores distribuídos.
+
+[CONCEITO: IMPACTO NA TERRA]
+O impacto positivo na Terra ocorre quando dados espaciais são convertidos em informação acionável. A plataforma permite identificar riscos ambientais, apoiar alertas preventivos, melhorar o monitoramento territorial e auxiliar governos, empresas e comunidades na tomada de decisão.
+
+[CONCEITO: MACHINE LEARNING]
+O modelo de Machine Learning utilizado no projeto classifica o risco ambiental com base em variáveis como temperatura, umidade, pressão atmosférica, vento, chuva, luminosidade e índice de vegetação. A classificação pode retornar Normal, Atenção, Alto Risco ou Crítico.
+
+[CONCEITO: REGRAS CRÍTICAS]
+As regras críticas são uma camada determinística de segurança. Elas evitam que o sistema subestime situações severas. Por exemplo, temperatura muito alta, umidade muito baixa e índice de vegetação reduzido indicam risco de seca severa, estresse ambiental ou queimada, mesmo que o modelo estatístico classifique o cenário como apenas Atenção.
+
+[CONCEITO: DETECÇÃO DE ANOMALIAS]
+A detecção de anomalias identifica combinações incomuns de variáveis ambientais. No projeto, o Isolation Forest analisa se uma leitura foge do padrão aprendido no conjunto de dados. Uma anomalia não significa necessariamente desastre, mas indica que a leitura merece atenção especial.
+
+[CONCEITO: RISCO NORMAL]
+O risco Normal representa uma condição ambiental dentro da faixa esperada. Normalmente está associado a temperatura moderada, umidade adequada, pressão atmosférica estável, vento baixo ou moderado, chuva controlada e índice de vegetação saudável.
+
+[CONCEITO: RISCO ATENÇÃO]
+O risco Atenção representa uma condição intermediária. Pode ocorrer quando uma ou mais variáveis começam a sair da faixa ideal, como temperatura elevada, umidade reduzida, vento moderado ou chuva acima do normal. Essa condição exige acompanhamento, mas não necessariamente resposta emergencial.
+
+[CONCEITO: ALTO RISCO]
+O Alto Risco indica uma situação ambiental severa. Pode estar associado a possibilidade de seca, queimada, tempestade ou outro evento extremo. Nesse caso, recomenda-se validar os dados, aumentar a frequência de monitoramento e preparar alertas preventivos.
+
+[CONCEITO: RISCO CRÍTICO]
+O risco Crítico indica condição extrema e exige resposta imediata. Exemplos incluem temperatura muito alta com umidade muito baixa e vegetação degradada, ou pressão muito baixa com vento forte e chuva intensa. A recomendação é acionar plano de resposta, monitorar em tempo real e priorizar medidas preventivas.
+
+[CONCEITO: SECA E QUEIMADA]
+O risco de seca ou queimada aumenta quando há temperatura elevada, baixa umidade, alta luminosidade e baixo índice de vegetação. Essas condições indicam estresse ambiental e maior vulnerabilidade da região a focos de incêndio ou degradação do solo.
+
+[CONCEITO: TEMPESTADE SEVERA]
+O risco de tempestade severa aumenta quando há queda de pressão atmosférica, vento forte e chuva intensa. Essa combinação pode indicar instabilidade atmosférica e necessidade de alerta preventivo para a região monitorada.
+
+[CONCEITO: ÍNDICE DE VEGETAÇÃO]
+O índice de vegetação representa a condição da cobertura vegetal. Valores baixos indicam vegetação degradada, seca ou pouco saudável. Quando combinado com alta temperatura e baixa umidade, torna-se um forte indicador de risco ambiental.
+
+[CONCEITO: ESP32]
+O ESP32 representa a estação terrestre de sensoriamento ambiental. No MVP, como não há placa física disponível, foi criado um simulador Python que envia o mesmo payload JSON previsto para o ESP32 real. Também foi preparado um código em PlatformIO para futura execução em hardware físico.
+
+[CONCEITO: SIMULADOR ESP32]
+O simulador Python reproduz o comportamento de uma estação ESP32. Ele envia leituras ambientais para a API FastAPI por meio de requisições HTTP POST. Isso permite validar o fluxo de integração mesmo sem hardware físico.
+
+[CONCEITO: API FASTAPI]
+A API FastAPI recebe os dados ambientais, executa a predição de risco, aplica regras críticas, detecta anomalias, gera recomendação e salva o histórico da leitura. Ela funciona como camada de integração entre sensores, modelos de IA e dashboard.
+
+[CONCEITO: DASHBOARD]
+O dashboard Streamlit apresenta os dados ambientais, resultado da análise inteligente, mapa da localização, histórico de monitoramento, distribuição de riscos, anomalias e eventos críticos. Ele transforma os dados processados em informação visual para tomada de decisão.
+
+[CONCEITO: HISTÓRICO DE MONITORAMENTO]
+O histórico registra cada leitura recebida pela API, incluindo timestamp, variáveis ambientais, risco final, risco pelo modelo, risco por regra, anomalia, confiança e recomendação. Isso permite acompanhar a evolução temporal do ambiente monitorado.
+
+[CONCEITO: RAG]
+RAG significa Retrieval-Augmented Generation, ou Geração Aumentada por Recuperação. A ideia é buscar informações relevantes em uma base de conhecimento antes de gerar uma resposta. No OrbitaGuard AI, o assistente usa uma base local de conhecimento para explicar os resultados da análise ambiental.
+
+[CONCEITO: IA GENERATIVA LOCAL]
+A IA generativa local do projeto é uma versão simplificada e controlada, sem dependência de API paga. Ela recupera trechos relevantes da base de conhecimento e gera uma explicação técnica com base na pergunta do usuário e no resultado atual do sistema.
+
+[CONCEITO: TOMADA DE DECISÃO]
+A tomada de decisão é apoiada pela combinação de dados, modelo estatístico, regras críticas, anomalias e explicações técnicas. Essa combinação reduz o risco de interpretação incorreta e melhora a capacidade de resposta preventiva.
+
+[RECOMENDAÇÃO: RISCO NORMAL]
+Para risco Normal, recomenda-se manter o monitoramento contínuo e registrar as leituras para acompanhamento histórico.
+
+[RECOMENDAÇÃO: RISCO ATENÇÃO]
+Para risco Atenção, recomenda-se acompanhar a evolução das variáveis ambientais, verificar tendência de piora e aumentar a frequência de monitoramento se necessário.
+
+[RECOMENDAÇÃO: ALTO RISCO]
+Para Alto Risco, recomenda-se validar os sensores, emitir alerta preventivo, monitorar a região com maior frequência e preparar ações de mitigação.
+
+[RECOMENDAÇÃO: RISCO CRÍTICO]
+Para risco Crítico, recomenda-se acionar plano de resposta, priorizar a região monitorada, validar as leituras, comunicar responsáveis e acompanhar os dados em tempo real.
+
+[RECOMENDAÇÃO: ANOMALIA]
+Quando houver anomalia, recomenda-se verificar a integridade dos sensores, analisar se o evento representa falha de medição ou evento ambiental incomum e acompanhar as próximas leituras.
