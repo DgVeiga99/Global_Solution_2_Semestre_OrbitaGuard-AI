@@ -12,16 +12,13 @@
 
 # OrbitaGuard AI — Plataforma Inteligente de Monitoramento Ambiental com Dados Espaciais, Sensores e Inteligência Artificial
 
-## OrbitaGuard AI
-
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/">Diego Nunes Veiga</a>
+- <a href="https://www.linkedin.com/in/diego-veiga-5b884317b">Diego Nunes Veiga</a>
 
 ## 👩‍🏫 Professores:
-### Tutor(a) 
-- <a href="https://www.linkedin.com/"></a>
+
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/">André Godoi Chiovato</a>
+- André Godoi Chiovato
 
 
 ## 📜 Descrição
@@ -70,10 +67,8 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>Listagem de Links</b>:
 
-  - Repositório GitHub: `A preencher após publicação do repositório`
+  - Relatório: `A preencher após publicação do repositório`
   - Vídeo de apresentação no YouTube: `A preencher após gravação e publicação como não listado`
-  - Dashboard publicado: `Opcional / A preencher se houver deploy`
-  - API publicada: `Opcional / A preencher se houver deploy`
 
 - <b>Explicação de decisões técnicas</b>:
 
@@ -89,7 +84,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
   - O projeto é uma Prova de Conceito acadêmica e pode ser evoluído futuramente com dados reais de satélites, sensores físicos, banco de dados em nuvem e sistemas automáticos de alerta.
   - Caso a entrega esteja vinculada a uma competição ou avaliação especial da Global Solution, a participação deverá ser confirmada conforme orientação dos docentes.
-
+    
 
 ## 🔧 Como executar o código
 
